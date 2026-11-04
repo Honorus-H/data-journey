@@ -11,6 +11,7 @@
 - a function can have a lot of parameters that modify its behavior.
 - there are special ways to display quotes: escape them with a backslash, or use single quotes outside
 - methods do not change the original string, they return a new one, so I must store the result `name=name.strip()`
+- `lower()` put all the characters of a string in lowercase
 
 ## Code examples
 ```python
@@ -54,12 +55,13 @@ in this case the `.split()`method split the name wherever there is a **space** i
 
 ## Mistakes and fixes
 - `input()` did not work with the Code Runner button (Output panel is read-only). Fix: run the file in the terminal with "Run Python File" or remove the extension Code Runner 
+- error CS50_TOKEN, impossible to submit or to checck the code int th e code space. Fix : we have just to reload the page.
 
 ## Questions to ask
 - none
 
 ## Problem Set progress
-- [ ] indoor.py
+- [x] indoor.py
 - [ ] playback.py
 - [ ] faces.py
 - [ ] einstein.py
