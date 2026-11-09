@@ -1,4 +1,4 @@
-#--- example 1: first use of while---
+"""#--- example 1: first use of while---
 i = 1
 while i != 1:
     print("meow")
@@ -80,3 +80,107 @@ print(students[2])
 students = ["Hermione", "Harry", "Ron"]
 for student in students:
     print(student)
+
+
+#---example 15 : using of len---
+students = ["Hermione", "Harry", "Ron"]
+for i in range(len(students)):
+    print(students[i])
+
+#--- example 16 : using dictionnary----
+students={
+    "Hermione":"Gryffindor",
+    "Harry":"Gryffindor",
+    "Ron":"Gryffindor",
+    "Draco":"Slytherin",
+}
+print(students["Hermione"])
+print(students["Harry"])
+print(students["Ron"])
+print(students["Draco"])
+
+#--- example 17 : improving the last code ---
+students={
+    "Hermione":"Gryffindor",
+    "Harry":"Gryffindor",
+    "Ron":"Gryffindor",
+    "Draco":"Slytherin",
+}
+for student in students:
+    print(student, students[student], sep = ", ")
+
+#--- example 19 : list of dictionnary---
+students = [
+    {"name":"Hermione", "house":"Gryffindor", "patronus":"Otter"},
+    {"name":"Harry", "house":"Gryffindor", "patronus":"Stag"},
+     {"name":"Ron", "house":"Gryffindor", "patronus":"Jack Russell terrier "},
+     {"name":"Draco", "house":"Slytherin", "patronus":None}
+]
+
+#--- example 20 : displaying the content of the list of dictionnary---
+students = [
+    {"name":"Hermione", "house":"Gryffindor", "patronus":"Otter"},
+    {"name":"Harry", "house":"Gryffindor", "patronus":"Stag"},
+     {"name":"Ron", "house":"Gryffindor", "patronus":"Jack Russell terrier "},
+     {"name":"Draco", "house":"Slytherin", "patronus":None}
+]
+for student in students:
+    print(student["name"], student["house"],student["patronus"], sep=", ")
+
+
+#---example 21 : Mario, print column---
+
+def main ():
+    print_column(3)
+
+def print_column(height):
+    for _ in range(height):
+        print("#")
+        
+        
+main()
+
+
+#--- exemple 22 : Mario , print column second verison ---
+
+def main():
+    print_column(3)
+
+def print_column(height):
+    print("#\n"*3, end="")
+
+main()
+
+#---example 23 : Mario, print row ---
+def main():
+    print_row(4)
+
+def print_row(width):
+    print("?"*width)
+
+main()
+
+
+#---- example 24 : Mario, print a square---
+
+def main():
+    print_square(3)
+
+
+def print_square(size):
+    for i in range(size):
+          for j in range(size):
+               print("#", end="")
+          print()
+
+main()"""
+
+#---example 25: Mario, print a square ---
+
+def main():
+    print_square(3)
+
+def print_square(size):
+     for i in range(size):
+          print("#"*size)
+main()
