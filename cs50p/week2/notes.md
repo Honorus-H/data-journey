@@ -1,88 +1,89 @@
-# week 2 : Loops 
+# Week 2: Loops
 
-## Key Concepts 
-- **loops** premet you to creat a block of code which executes an action many times with some conditions
-- **while**: while loops work by repeatedly asking if the condition of the loop has been fulfilled
-- **list**: In python a list is as in our life a list of element or a to do list
-- **for**: for is a loop we use when we know in advance how many times we want to execute a code 
-- **range**: this focntion returns us a range of value, its expects as input atleast one argument e.g. `range(3)`
-- **len***: len is a fucntion that tell us the length of a list 
-- **dict**: dics are data structure that permet us to associate a value to another value, associate keays to values. It's like a dictionary in the human world 
-- **None**: None represents officialy the abscence of a value(for the moment I use it in dictionnarry) 
-
-
+## Key Concepts
+- **loop**: lets you create a block of code that runs an action several times, as long as a condition is met
+- **while**: a while loop works by repeatedly checking whether its condition is still true
+- **list**: in Python, a list is like a list in real life, a sequence of elements, such as a to-do list
+- **for**: a loop we use when we know in advance how many times we want to run a block of code
+- **range**: this function returns a range of values; it expects at least one argument, e.g. `range(3)`
+- **len**: a function that tells us the length of a list (it also works on strings, e.g. `len("cat")` is 3)
+- **dict**: dicts are data structures that let us associate keys with values. It's like a dictionary in the real world
+- **None**: `None` officially represents the absence of a value (for now I use it in dictionaries)
 
 ## What I learned
-- when using the loop `while` you should pay attention to the bool you pass to the loop otherwise the loop will never stop(example in the part: codes example).
-- in programmation you can increment it's the fact of writting `i += 1`instead of writting `i = i+1` , they have the same meaning and do the same thing.
-- when using the function `range()` we are going to have a range of value starting from 0 and stoping at the number just before **the number you specify** 
-- when using the loop for you do not need to initialize the variable, python takes care of initializing the variable 
-- if we have a lot of information to store it is possible to use a list of dictionary
+- When using a `while` loop, pay attention to the condition you give it, otherwise the loop will never stop (see the examples in the "Code examples" section).
+- In programming you can increment a variable by writing `i += 1` instead of `i = i + 1`. They have the same meaning and do the same thing.
+- When using `range()` with one number, we get a range of values starting at 0 and stopping just before **the number you specify** (`range(3)` gives 0, 1, 2).
+- When using a `for` loop, you don't need to initialize the variable yourself: Python takes care of it.
+- If we have a lot of information to store, we can use a list of dictionaries.
+- We can use `.isdigit()` to check if all the characters of a string are digits. It only works on **strings**.
+- We can use `.isalpha()` to check if all the characters of a string are letters. It only works on **strings**.
+- We can use `.isalnum()` to check if a string is made only of letters and/or digits. It only works on **strings**.
 
-## Codes example 
+## Code examples
 ```python
-i = 1 
+i = 1
 while i != 0:
     print("meow")
 ```
-In this case the loop will never end beacause the `i`variable is never going to reach 0.
+In this case the loop will never end because `i` never changes, so it never reaches 0.
+
 ```python
-i = 1
-while i != 1:
+i = 3
+while i != 0:
     print("meow")
     i = i - 1
 ```
-In this case the loop will stop after displaying "meow" three times 
+In this case the loop stops after printing "meow" three times.
 
-```python 
+```python
 for _ in range(3):
-     print("meow")
+    print("meow")
 ```
-This code is written in pythonic, here the `_` is used to specify that the name of the variable has no importance, we jsut need to print three times "meow"
+This code is written in a "Pythonic" way. The `_` shows that the variable's name doesn't matter: we just need to print "meow" three times.
 
 ```python
 students = ["Hermione", "Harry", "Ron"]
 print(len(students))
 ```
-here the function will print 3
+Here the code prints 3.
 
 ```python
-tudents={
-    "Hermione":"Gryffindor",
-    "Harry":"Gryffindor",
-    "Ron":"Gryffindor",
-    "Draco":"Slytherin",
+students = {
+    "Hermione": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
 }
 print(students["Hermione"])
 print(students["Harry"])
 print(students["Ron"])
 print(students["Draco"])
 ```
-that's how we creat a dictionary and print the values of the keys 
+This is how we create a dictionary and print the value associated with each key.
 
 ```python
 students = [
-    {"name":"Hermione", "house":"Gryffindor", "patronus":"Otter"},
-    {"name":"Harry", "house":"Gryffindor", "patronus":"Stag"},
-     {"name":"Ron", "house":"Gryffindor", "patronus":"Jack Russell terrier "},
-     {"name":"Draco", "house":"Slytherin", "patronus":None}
+    {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
+    {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+    {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell terrier"},
+    {"name": "Draco", "house": "Slytherin", "patronus": None},
 ]
 ```
-here we use `None`to specify that Draco has no pratonus, it is not like we just don't know his pratronus.
+Here we use `None` to show that Draco has no patronus. This is different from not knowing what his patronus is.
 
-# Mistakes and fixes
-- none
+## Mistakes and fixes
+- None
+
 ## Questions to ask
-- none
+- None
 
 ## Problem Set progress
-- [ ] camelCase
-- [ ] Coke Machine
-- [ ] Just setting up my twttr
-- [ ] Vanity Plates
-- [ ]Nutrition Facts 
+- [x] camelCase
+- [x] Coke Machine
+- [x] Just setting up my twttr
+- [x] Vanity Plates
+- [x] Nutrition Facts
 
-## Location in the video
-
-time : 0:41:58
-chapter : len 
+## Lecture progress
+Lecture completed 

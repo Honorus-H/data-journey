@@ -1,4 +1,4 @@
-"""#--- example 1: first use of while---
+#--- example 1: first use of while---
 i = 1
 while i != 1:
     print("meow")
@@ -173,7 +173,7 @@ def print_square(size):
                print("#", end="")
           print()
 
-main()"""
+main()
 
 #---example 25: Mario, print a square ---
 

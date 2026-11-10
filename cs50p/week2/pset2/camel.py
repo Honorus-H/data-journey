@@ -1,3 +1,4 @@
+"""This code permets to pass form camel case to snake case"""
 def main():
     x = input("camelCase: ")
     print(camelCase(x))
