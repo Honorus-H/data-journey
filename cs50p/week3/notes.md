@@ -87,8 +87,8 @@ Same idea, but with `pass`: if the input is invalid, nothing is printed and the 
 ## Problem Set progress
 - [x] Fuel Gauge
 - [x] Felipe's Taqueria
-- [ ] Grocery List
-- [ ] Outdated
+- [x] Grocery List
+- [x] Outdated
 
 ## Location in the video
 finished 
